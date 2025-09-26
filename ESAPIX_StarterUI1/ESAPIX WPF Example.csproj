@@ -5,6 +5,7 @@
 		<TargetFramework>net480</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<Platforms>x64</Platforms>
+		<LangVersion>Latest</LangVersion>
 		<ApplicationIcon>Resources\esapix.ico</ApplicationIcon>
 	</PropertyGroup>
 
