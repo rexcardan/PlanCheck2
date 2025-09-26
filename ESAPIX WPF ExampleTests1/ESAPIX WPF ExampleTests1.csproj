@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net480</TargetFramework>
+    <RootNamespace>ESAPIX_WPF_ExampleTests1</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="MSTest" Version="3.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ESAPIX_StarterUI1\ESAPIX WPF Example.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ESAPIX_16.1" Version="1.6.7845.354" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="VMS.TPS.Common.Model.API">
+			<HintPath>C:\Program Files (x86)\Varian\RTM\18.1\esapi\API\VMS.TPS.Common.Model.API.dll</HintPath>
+		</Reference>
+		<Reference Include="VMS.TPS.Common.Model.Types">
+			<HintPath>C:\Program Files (x86)\Varian\RTM\18.1\esapi\API\VMS.TPS.Common.Model.Types.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	
+
+</Project>

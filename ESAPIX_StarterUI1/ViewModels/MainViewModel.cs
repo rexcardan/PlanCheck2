@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using ESAPIX.Common;
 using ESAPIX.Constraints.DVH;
 using ESAPIX_WPF_Example.Models;
+using ESAPX_StarterUI.Models;
 using Prism.Commands;
 using Prism.Mvvm;
 using System.Collections.ObjectModel;
@@ -27,7 +28,7 @@ namespace ESAPX_StarterUI.ViewModels
                 new ConstraintRow(ConstraintBuilder.Build("Rectum", "V75Gy[%] <= 15")),
                 new ConstraintRow(ConstraintBuilder.Build("Rectum", "V65Gy[%] <= 35")),
                 new ConstraintRow(ConstraintBuilder.Build("Bladder", "V80Gy[%] <= 15")),
-             //   new PlanConstraint(new CTDateConstraint())
+                new ConstraintRow(new CTDateConstraint())
             });
         }
 
